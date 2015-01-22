@@ -48,7 +48,9 @@ jQuery(function($) {
 
         // Get the requested url and replace the current content
         // with the loaded content
-        $.get(State.url, function(result) {
+        $.get(State.url, function(){
+
+        }).done(function(result) {
             var $html = $(result);
             var $newContent = $('#ajax-container', $html).contents();
 
@@ -79,6 +81,9 @@ jQuery(function($) {
                 loading = false;
                 showIndex = false;
             });
+        }).fail(function() {
+            // redirect to url so it displays ghost's 404 error
+            window.location.replace(State.url);
         });
     });
 
