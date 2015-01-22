@@ -16,6 +16,7 @@
     {{! Styles }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/nprogress.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/highlightjs/tomorrow-night.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
@@ -49,7 +50,7 @@
                 </ul>
             </div>
         </header>
-    
+
         <div id="ajax-container">
             {{{body}}}
         </div>
@@ -63,7 +64,7 @@
                 <a class="button-square button-jump-top js-jump-top" href="#"><i class="fa fa-angle-up"></i></a>
             </div>
 
-            <p class="footer-copyright">&copy; {{date format="YYYY"}} / Published with <a href="https://ghost.org">Ghost</a> / <a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></p>
+            <p class="footer-copyright">&copy; {{date format="YYYY"}} / Published with <a href="https://ghost.org">Ghost</a> / Modified version of <a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></p>
         </div>
     </footer>
 
@@ -73,6 +74,7 @@
     <script type="text/javascript" src="{{asset "js/jquery.history.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/nprogress.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/scripts.js"}}"></script>
 
 </body>

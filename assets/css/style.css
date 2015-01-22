@@ -73,12 +73,16 @@ img {
   width: auto;
   max-width: 100%; }
 
+code {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  color: #f92672;
+  padding: 3px 3px;
+}
+
 pre {
-  background: #F1F0EA;
-  border: 1px solid #DDDBCC;
-  border-radius: 3px;
   margin: 0 0 40px;
-  padding: 15px 20px; }
+}
 
 hr {
   border: none;
